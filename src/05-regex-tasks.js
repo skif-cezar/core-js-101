@@ -32,7 +32,9 @@
  * @return {RegExp}
  */
 function getRegexForGuid() {
-  throw new Error('Not implemented');
+  return new RegExp(
+    '^{[a-f,A-F,0-9]{8}(-[a-f,A-F,0-9]{4}){3}-[a-f,A-F,0-9]{12}}$',
+  );
 }
 
 
@@ -54,7 +56,7 @@ function getRegexForGuid() {
  *
  */
 function getRegexForPitSpot() {
-  throw new Error('Not implemented');
+  return RegExp('^(pi|s|r).+');
 }
 
 
